@@ -1,3 +1,5 @@
+# matomo-bypass-adblock
+
 In an effort to find a way to collect metrics on approximately 250 websites, I've been doing my research. 
 Nowadays, it doesn't matter which platform you choose for that. _Google Analytics, Plausible, Matomo_... probably all of them are blocked, either parcially or completely, by adblockers and similar. 
 It doesn't matter if you collect in a '_opt-in_' policy, they don't care about your visitor's choice. They will block either way. 
@@ -15,4 +17,4 @@ For example, if you are using apache, the '.htaccess' file above is a good start
 
 After you've done everything, then there's a change that your code will not be blocked. Obviously, I recommend only tracking the visitor after he/she gave the consent. On Matomo, that's pretty easy. The 'tracking-code.js' file above is the final example.
 
-Ah, after the visitor gave the consent, just call `_paq.push(["setConsentGiven"]);`.
+Ah, after the visitor gave the consent, just call `_paq.push(["setConsentGiven"]);`. Otherwise, your code will load, but it wont send any request to your instance.
