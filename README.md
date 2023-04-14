@@ -18,3 +18,7 @@ For example, if you are using apache, the '.htaccess' file above is a good start
 After you've done everything, then there's a change that your code will not be blocked. Obviously, I recommend only tracking the visitor after he/she gave the consent. On Matomo, that's pretty easy. The 'tracking-code.js' file above is the final example.
 
 Ah, after the visitor gave the consent, just call `_paq.push(["setConsentGiven"]);`. Otherwise, your code will load, but it wont send any request to your instance.
+
+Some sources that I used:\
+[0x11DFE/Matomo-Anti-Adblock](https://github.com/0x11DFE/Matomo-Anti-Adblock/blob/master/README.md)\
+[blog.jonlu.ca](https://blog.jonlu.ca/posts/matomo-bypass)
