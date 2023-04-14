@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on   
+
+	#Rewriting all requests to 'poop.js' and 'poop.php' to the original files.
+	#With this, there's no need to rename the files
+	RewriteRule ^poop.js/?$		matomo.js	[NC,L]
+	RewriteRule ^poop.php/?$	matomo.php	[NC,L]
+</IfModule>
