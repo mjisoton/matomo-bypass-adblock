@@ -13,7 +13,7 @@ For example, if you are using apache, the '.htaccess' file above is a good start
 
 3. Some very popular blocklists have a rule to block any '_beacon request_'. By default, Matomo uses the [Beacon API](https://developer.mozilla.org/en-US/docs/Web/API/Beacon_API) of the browser to send requests to the selfhosted instance, so you will have to disable it with `disableAlwaysUseSendBeacon`. These 'Beacon Requests' appear as '_ping_' on the Network tab of the Developer Tools on Google Chrome. 
 
-4. Again, some very popular blocklists have the rule to block the '_.php?action_name=_' part of the tracking URL (Crazy, right? That's way to invasive). So insted of using _GET_ requests, you will have to configure the tracking code to use _POST_ requests. 
+4. Again, some very popular blocklists have the rule to block the '_.php?action_name=_' part of the tracking URL (Crazy, right? That's way to invasive). So instead of using _GET_ requests, you will have to configure the tracking code to use _POST_ requests. 
 
 After you've done everything, then there's a change that your code will not be blocked. Obviously, I recommend only tracking the visitor after he/she gave the consent. On Matomo, that's pretty easy. The 'tracking-code.js' file above is the final example.
 
