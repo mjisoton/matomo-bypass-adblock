@@ -15,7 +15,7 @@ For example, if you are using apache, the '.htaccess' file above is a good start
 
 4. Again, some very popular blocklists have the rule to block the '_.php?action_name=_' part of the tracking URL (Crazy, right? That's way to invasive). So instead of using _GET_ requests, you will have to configure the tracking code to use _POST_ requests. 
 
-After you've done everything, then there's a change that your code will not be blocked. Obviously, I recommend only tracking the visitor after he/she gave the consent. On Matomo, that's pretty easy. The 'tracking-code.js' file above is the final example.
+After you've done everything, then there's a chance that your code will not be blocked. Obviously, I recommend only tracking the visitor after he/she gave the consent. On Matomo, that's pretty easy. The 'tracking-code.js' file above is the final example.
 
 Ah, after the visitor gave the consent, just call `_paq.push(["setConsentGiven"]);`. Otherwise, your code will load, but it wont send any request to your instance.
 
